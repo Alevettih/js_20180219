@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>First page</title>
+    <script src="blocks/auth/auth.js"></script>
 </head>
 <body>
     <h1>Hello world</h1>
+
+    <div class="js-auth"></div>
+
+    <script>
+        let auth = new Auth(document.querySelector('.js-auth'), {});
+    </script>
 </body>
 </html>
