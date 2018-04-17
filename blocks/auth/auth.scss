@@ -1,0 +1,60 @@
+.auth {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(45deg, #ffffff, #cccccc);
+
+  &__inner {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .3);
+    padding: 40px;
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  &__heading {
+    margin-bottom: .5em;
+  }
+
+  &__input-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  &__input {
+    position: relative;
+    display: block;
+    border: none;
+    border-bottom: 2px solid #cccccc;
+    width: 100%;
+    padding-bottom: 1em;
+    z-index: 1;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__input:placeholder-shown ~ &__label {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.1em;
+    font-family: 'Roboto', Arial, sans-serif;
+    transition: opacity .3s, transform .3s;
+    order: -1;
+  }
+
+  &__btn {
+    background-color: #cccccc;
+    padding: 7px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+  }
+}

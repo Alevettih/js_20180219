@@ -1,9 +1,9 @@
-import template from './auth.pug';
+import template from './message-input.pug';
 
-export class Auth {
-  constructor(el, data) {
+export class MessageInput {
+  constructor(el) {
     this.el = el;
-    this.data = data;
+
     this.render();
 
     let form = this.el.querySelector('form');

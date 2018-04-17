@@ -1,0 +1,56 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 20px;
+}
+
+body {
+    font-family:  'Open Sans', Arial, sans-serif;
+    font-size: .7rem;
+    line-height: 1.4;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1.4em;
+}
+
+input, textarea {
+    background: transparent;
+    border: none;
+    appearance: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
